@@ -76,6 +76,7 @@ Fibre is running. Home: $FIBRE_HOME  ·  logs: sudo journalctl -u celestia-fibre
 3. Confirm:                celestia-appd query valaddr providers --home $CELESTIA_HOME
 
 An unregistered server gets no Fibre traffic. Register again only if the address changes.
+Health check for monitoring:  grpc_health_probe -addr=127.0.0.1:7980 -tls -tls-no-verify
 Using TMKMS or another remote signer: it must support SignRawBytes, with median signing latency of 10 ms or less.
 Memory: the defaults (max_connections 16 × max_concurrent_streams 13) suit a 32 GiB host. Tune them in
 $FIBRE_HOME/config/server_config.toml.

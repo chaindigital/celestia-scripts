@@ -1,8 +1,8 @@
 # Shared settings and helpers for the Chain Digital Celestia scripts.
 # Every script loads this file, so a version bump here reaches all of them.
 
-APP_VERSION_MAINNET="v10.4.0"
-APP_VERSION_MOCHA="v10.4.0-mocha"
+APP_VERSION_MAINNET="v10.5.0"
+APP_VERSION_MOCHA="v10.5.0-mocha"
 NODE_VERSION_MAINNET="v0.34.3"
 NODE_VERSION_MOCHA="v0.34.3-mocha"
 
