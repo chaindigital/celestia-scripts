@@ -30,7 +30,7 @@ All versions are pinned in one place, [`common.sh`](common.sh).
 
 | | Mainnet `celestia` | Testnet `mocha-5` |
 |---|---|---|
-| celestia-app + Fibre | `v10.4.0` | `v10.4.0-mocha` |
+| celestia-app + Fibre | `v10.5.0` | `v10.5.0-mocha` |
 | celestia-node (bridge) | `v0.34.3` | `v0.34.3-mocha` |
 
 ## Requirements
@@ -80,7 +80,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/chaindigital/celestia-script
 
 The script checks that the chain is on app version 10 and that the node's app gRPC and privval gRPC are on loopback.
 It starts `celestia-fibre` on port `7980` and prints the `valaddr set-host` command that registers your host on-chain.
-Set `FIBRE_HOME=/mnt/fibre/.celestia-fibre` to keep Fibre data on its own disk, as the [Fibre guide](https://github.com/celestiaorg/celestia-app/blob/v10.4.0/fibre/cmd/README.md) recommends.
+Set `FIBRE_HOME=/mnt/fibre/.celestia-fibre` to keep Fibre data on its own disk, as the [Fibre guide](https://github.com/celestiaorg/celestia-app/blob/v10.5.0/fibre/cmd/README.md) recommends.
+Since v10.5.0, Fibre exposes a gRPC health check on `7980` for monitoring:
+`grpc_health_probe -addr=127.0.0.1:7980 -tls -tls-no-verify`.
 
 > [!NOTE]
 > With TMKMS or another remote signer, Fibre still signs through the node. The signer must support `SignRawBytes`, with median signing latency of 10 ms or less.
@@ -153,3 +155,4 @@ No node of your own yet? Our RPC, API and snapshots are listed on [chaindigital.
 <p align="center">
   <sub>Maintained by <a href="https://chaindigital.tech">Chain Digital</a> · Celestia Foundation Delegation Program, Cohort 7 · issues and PRs welcome</sub>
 </p>
+
