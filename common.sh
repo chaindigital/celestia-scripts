@@ -3,8 +3,8 @@
 
 APP_VERSION_MAINNET="v10.5.0"
 APP_VERSION_MOCHA="v10.5.0-mocha"
-NODE_VERSION_MAINNET="v0.34.3"
-NODE_VERSION_MOCHA="v0.34.3-mocha"
+NODE_VERSION_MAINNET="v0.34.4"
+NODE_VERSION_MOCHA="v0.34.4-mocha"
 
 SNAPSHOT_BASE="https://snapshots.chaindigital.tech/celestia"
 NETWORKS_RAW="https://raw.githubusercontent.com/celestiaorg/networks/master"
