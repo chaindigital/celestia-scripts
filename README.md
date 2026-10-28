@@ -31,7 +31,7 @@ All versions are pinned in one place, [`common.sh`](common.sh).
 | | Mainnet `celestia` | Testnet `mocha-5` |
 |---|---|---|
 | celestia-app + Fibre | `v10.5.0` | `v10.5.0-mocha` |
-| celestia-node (bridge) | `v0.34.3` | `v0.34.3-mocha` |
+| celestia-node (bridge) | `v0.34.4` | `v0.34.4-mocha` |
 
 ## Requirements
 
@@ -155,4 +155,3 @@ No node of your own yet? Our RPC, API and snapshots are listed on [chaindigital.
 <p align="center">
   <sub>Maintained by <a href="https://chaindigital.tech">Chain Digital</a> · Celestia Foundation Delegation Program, Cohort 7 · issues and PRs welcome</sub>
 </p>
-
